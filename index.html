@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Miriam College</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            mcgreen: '#001489',
+            mcorange: '#FCB61A',
+          },
+          fontFamily: {
+            sans: ['Poppins', 'Helvetica Neue', 'Arial', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+</head>
+
+<body class="font-sans bg-gradient-to-br from-green-100 via-white to-green-50 min-h-screen flex flex-col items-center relative overflow-hidden">
+
+  <!-- Glowing gradient background -->
+  <div class="absolute inset-0 bg-[radial-gradient(circle_at_20%_30%,rgba(255,122,0,0.15),transparent_60%),radial-gradient(circle_at_80%_70%,rgba(0,99,65,0.15),transparent_60%)]"></div>
+
+  <!-- Header -->
+  <header class="text-center relative z-10 mt-8 mb-6 px-4">
+
+    <p class="text-gray-700 max-w-2xl mx-auto mb-6">Find and visit any Miriam College department below.</p>
+
+    <!-- Search Bar -->
+    <input
+      id="searchInput"
+      type="text"
+      placeholder="Search department..."
+      class="w-full max-w-md px-4 py-2 rounded-full border border-gray-300 shadow-sm focus:ring-2 focus:ring-mcorange focus:outline-none text-gray-700"
+    />
+  </header>
+
+  <!-- Scrollable Container -->
+  <section id="cardContainer"
+    class="relative z-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-6 pb-8 max-w-6xl w-full overflow-y-auto"
+    style="max-height: 70vh; scroll-behavior: smooth;">
+
+    <!-- CARD TEMPLATE -->
+    <div class="card group rounded-3xl overflow-hidden shadow-lg border border-white/30 backdrop-blur-2xl bg-white/25 hover:bg-white/35 transition-all h-[380px] flex flex-col justify-between">
+      <div>
+        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=60" alt="College of Education" class="h-36 w-full object-cover transition-transform duration-500 group-hover:scale-110" />
+        <div class="p-4">
+          <h2 class="text-lg font-semibold text-mcgreen mb-2">College of Education</h2>
+          <p class="text-gray-700 text-sm">Empowering future educators through values-centered excellence and innovation.</p>
+        </div>
+      </div>
+      <div class="p-4 pt-0">
+        <a href="https://www.mc.edu.ph/education" target="_blank" class="inline-block bg-mcorange text-white text-sm font-medium px-4 py-2 rounded-full hover:bg-orange-600 transition focus:ring-2 focus:ring-mcorange focus:outline-none">Visit Department</a>
+      </div>
+    </div>
+
+    <div class="card group rounded-3xl overflow-hidden shadow-lg border border-white/30 backdrop-blur-2xl bg-white/25 hover:bg-white/35 transition-all h-[380px] flex flex-col justify-between">
+      <div>
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=60" alt="Arts and Sciences" class="h-36 w-full object-cover transition-transform duration-500 group-hover:scale-110" />
+        <div class="p-4">
+          <h2 class="text-lg font-semibold text-mcgreen mb-2">College of Arts and Sciences</h2>
+          <p class="text-gray-700 text-sm">Developing well-rounded individuals equipped for global citizenship and leadership.</p>
+        </div>
+      </div>
+      <div class="p-4 pt-0">
+        <a href="https://www.mc.edu.ph/arts-sciences" target="_blank" class="inline-block bg-mcorange text-white text-sm font-medium px-4 py-2 rounded-full hover:bg-orange-600 transition focus:ring-2 focus:ring-mcorange focus:outline-none">Visit Department</a>
+      </div>
+    </div>
+
+    <div class="card group rounded-3xl overflow-hidden shadow-lg border border-white/30 backdrop-blur-2xl bg-white/25 hover:bg-white/35 transition-all h-[380px] flex flex-col justify-between">
+      <div>
+        <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=800&q=60" alt="Business College" class="h-36 w-full object-cover transition-transform duration-500 group-hover:scale-110" />
+        <div class="p-4">
+          <h2 class="text-lg font-semibold text-mcgreen mb-2">College of Business, Entrepreneurship, and Accountancy</h2>
+          <p class="text-gray-700 text-sm">Building competent, ethical, and socially responsible business professionals.</p>
+        </div>
+      </div>
+      <div class="p-4 pt-0">
+        <a href="https://www.mc.edu.ph/business" target="_blank" class="inline-block bg-mcorange text-white text-sm font-medium px-4 py-2 rounded-full hover:bg-orange-600 transition focus:ring-2 focus:ring-mcorange focus:outline-none">Visit Department</a>
+      </div>
+    </div>
+
+    <div class="card group rounded-3xl overflow-hidden shadow-lg border border-white/30 backdrop-blur-2xl bg-white/25 hover:bg-white/35 transition-all h-[380px] flex flex-col justify-between">
+      <div>
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=60" alt="International Studies" class="h-36 w-full object-cover transition-transform duration-500 group-hover:scale-110" />
+        <div class="p-4">
+          <h2 class="text-lg font-semibold text-mcgreen mb-2">College of International, Humanitarian, and Development Studies</h2>
+          <p class="text-gray-700 text-sm">Promoting global awareness and transformative leadership through education.</p>
+        </div>
+      </div>
+      <div class="p-4 pt-0">
+        <a href="https://www.mc.edu.ph/international" target="_blank" class="inline-block bg-mcorange text-white text-sm font-medium px-4 py-2 rounded-full hover:bg-orange-600 transition focus:ring-2 focus:ring-mcorange focus:outline-none">Visit Department</a>
+      </div>
+    </div>
+
+    <div class="card group rounded-3xl overflow-hidden shadow-lg border border-white/30 backdrop-blur-2xl bg-white/25 hover:bg-white/35 transition-all h-[380px] flex flex-col justify-between">
+      <div>
+        <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=800&q=60" alt="Music College" class="h-36 w-full object-cover transition-transform duration-500 group-hover:scale-110" />
+        <div class="p-4">
+          <h2 class="text-lg font-semibold text-mcgreen mb-2">College of Music</h2>
+          <p class="text-gray-700 text-sm">Celebrating creativity and artistry through holistic music education and performance.</p>
+        </div>
+      </div>
+      <div class="p-4 pt-0">
+        <a href="https://www.mc.edu.ph/music" target="_blank" class="inline-block bg-mcorange text-white text-sm font-medium px-4 py-2 rounded-full hover:bg-orange-600 transition focus:ring-2 focus:ring-mcorange focus:outline-none">Visit Department</a>
+      </div>
+    </div>
+
+    <div class="card group rounded-3xl overflow-hidden shadow-lg border border-white/30 backdrop-blur-2xl bg-white/25 hover:bg-white/35 transition-all h-[380px] flex flex-col justify-between">
+      <div>
+        <img src="https://images.unsplash.com/photo-1596495577886-d920f1fb7238?auto=format&fit=crop&w=800&q=80
+" alt="Graduate School" class="h-36 w-full object-cover transition-transform duration-500 group-hover:scale-110" />
+        <div class="p-4">
+          <h2 class="text-lg font-semibold text-mcgreen mb-2">Graduate School</h2>
+          <p class="text-gray-700 text-sm">Advancing knowledge and professional excellence through postgraduate education.</p>
+        </div>
+      </div>
+      <div class="p-4 pt-0">
+        <a href="https://www.mc.edu.ph/graduate" target="_blank" class="inline-block bg-mcorange text-white text-sm font-medium px-4 py-2 rounded-full hover:bg-orange-600 transition focus:ring-2 focus:ring-mcorange focus:outline-none">Visit Department</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="relative z-10 text-gray-500 text-sm text-center mt-4 mb-6">
+    © 2025 Miriam College. All rights reserved.
+  </footer>
+
+  <!-- Search Script -->
+  <script>
+    const searchInput = document.getElementById('searchInput');
+    const cards = document.querySelectorAll('.card');
+
+    searchInput.addEventListener('input', () => {
+      const query = searchInput.value.toLowerCase();
+      cards.forEach(card => {
+        const title = card.querySelector('h2').textContent.toLowerCase();
+        card.style.display = title.includes(query) ? 'flex' : 'none';
+      });
+    });
+  </script>
+
+</body>
+</html>
